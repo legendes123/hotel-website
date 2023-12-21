@@ -1,0 +1,10 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+// Загальні стилі для body
+body {
+  font-family: $montserrat-font;
+  background-color: $background-main-light;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}

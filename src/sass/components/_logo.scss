@@ -1,0 +1,11 @@
+// Вносить один з членів команди
+// Загальні стилі для logo в секціях і футері
+.logo {
+  font-family: $film-font;
+  text-transform: uppercase;
+  @include font(40px, 1.08, 700, 0.3em);
+  @include tablet {
+    @include font(64px, null, null, null);
+  }
+}
+

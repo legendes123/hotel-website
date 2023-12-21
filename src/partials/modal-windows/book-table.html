@@ -1,0 +1,76 @@
+<div class="backdrop is-hidden" data-modal-table>
+  <div class="modal book-table-modal">
+    <button class="btn-close" type="button" data-modal-close-table></button>
+    <div class="book-table-modal__container">
+      <h2 class="book-table-modal__title">Забронювати столик</h2>
+      <!-- форма -->
+      <form class="form-book-table">
+        <div class="user-form-wrap">
+          <div class="form-field" role="group">
+            <input
+              name="user-name"
+              id="user-name"
+              class="form-book-table__input text-input"
+              type="text"
+              pattern="([a-zA-Zа-яА-Я]+)"
+              placeholder="Ваше ім'я"
+              required=""
+            />
+            <label class="form__label" for="user-name"
+              >На кого забронювати столик?</label
+            >
+          </div>
+
+          <div class="form-field" role="group">
+            <input
+              name="tel-user"
+              id="phone-user"
+              class="form-book-table__input text-input"
+              type="tel"
+              pattern="([+][0-9\+]{12})"
+              placeholder="+38 (___) ___-__-__"
+              required=""
+            />
+            <label class="form__label" for="phone-user">Номер телефону</label>
+          </div>
+        </div>
+
+        <div class="select-form-wrap">
+          <div class="form-field" role="group">
+            <select
+              class="form-book-table__input"
+              name="number-guests"
+              id="number-guests"
+            >
+              <option value="Кількість осіб" selected="">1</option>
+              <option value="Кількість осіб">2</option>
+              <option value="Кількість осіб">3</option>
+              <option value="Кількість осіб">4</option>
+            </select>
+            <svg class="select-icon" width="20" height="12">
+              <use href="./images/icon.svg#icon-arrow-down"></use>
+            </svg>
+            <label class="form__label form__label--select" for="number-guests">
+              Столик на яку кількість осіб?
+            </label>
+          </div>
+          <div class="form-field" role="group">
+            <select class="form-book-table__input" name="date" id="date">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="select-icon" width="20" height="12">
+              <use href="./images/icon.svg#icon-arrow-down"></use>
+            </svg>
+            <label class="form__label form__label--date" for="date">
+              На яку дату бронювати?
+            </label>
+          </div>
+        </div>
+        <button class="form-button big-btn" type="submit">
+          Оформити бронювання
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
